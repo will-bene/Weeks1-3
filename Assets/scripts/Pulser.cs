@@ -3,6 +3,7 @@ using UnityEngine;
 public class Pulser : MonoBehaviour
 {
     public AnimationCurve curve;
+    
 
     public float duration;
     public float output;
