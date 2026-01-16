@@ -27,8 +27,8 @@ public class mover : MonoBehaviour
     {
  
         Vector3 newPosition = transform.position;
-        newPosition.x += hspeed * curDir;
-        newPosition.y += vspeed * curDir;
+        newPosition.x += (hspeed*Time.deltaTime) * curDir;
+        newPosition.y += (vspeed*Time.deltaTime) * curDir;
         Vector3 worldPosition = gameCamera.WorldToScreenPoint(newPosition);
        
         if (worldPosition.x > scrWid || worldPosition.x < 0)
