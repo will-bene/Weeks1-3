@@ -24,7 +24,6 @@ public class Tank : MonoBehaviour
             transform.position += transform.right * moveSpeed * Time.deltaTime;
         }
 
-        //mouse direction
 
     }
 }
